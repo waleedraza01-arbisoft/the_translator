@@ -11,7 +11,8 @@ COPY app/requirements.txt .
 
 # Install Python dependencies
 # We use the CPU version of PyTorch to keep the image size reasonable
-RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+# Force torch 2.6.0 or newer
+RUN pip install --no-cache-dir "torch>=2.6.0" --index-url https://download.pytorch.org/whl/cpu
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app/ ./app

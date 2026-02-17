@@ -1,8 +1,9 @@
 fastapi
 uvicorn
-transformers
-torch
+transformers>=4.48.0
+torch>=2.6.0
 sentencepiece
 sacremoses
 pytest
 httpx
+safetensors
