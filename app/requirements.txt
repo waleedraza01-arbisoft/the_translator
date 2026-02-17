@@ -1,7 +1,7 @@
 fastapi
 uvicorn
 transformers>=4.48.0
-torch>=2.6.0
+# torch>=2.6.0  <-- Remove or comment this out! We install it in Dockerfile.
 sentencepiece
 sacremoses
 pytest
